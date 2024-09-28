@@ -26,3 +26,19 @@ El **Asilo de Ancianos Esperanza de Santa Ana** actualmente lleva los registros 
 5. **Configurar el AuthNavigator** para gestionar la navegación entre las pantallas de autenticación, permitiendo alternar entre el login y el registro.
 
 **Estado**: ¡Etapa finalizada! ✅
+
+
+Etapa 2: Pantalla de Inicio y Navegación ✅
+Objetivo: Crear la pantalla principal y gestionar la navegación entre diferentes secciones de la aplicación.
+
+Tareas
+Desarrollar la HomeScreen:
+
+Crear una pantalla principal (HomeScreen) que incluya opciones para acceder a las secciones de Pacientes, Doctores y Citas.
+Implementar un menú o pestañas de navegación para facilitar el acceso a las diferentes secciones de la aplicación.
+Configurar el AppNavigator:
+
+Establecer un Stack.Navigator en el archivo AppNavigator.js para manejar la navegación entre la pantalla de inicio y las demás pantallas de la aplicación.
+Asegurarse de que cada pantalla tenga su propio título y se muestre correctamente en la barra de navegación.
+
+Estado: ¡Etapa finalizada! ✅
