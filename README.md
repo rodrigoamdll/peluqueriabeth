@@ -28,11 +28,10 @@ El **Asilo de Ancianos Esperanza de Santa Ana** actualmente lleva los registros 
 **Estado**: ¡Etapa finalizada! ✅
 
 
-Etapa 2: Pantalla de Inicio y Navegación ✅
-Objetivo: Crear la pantalla principal y gestionar la navegación entre diferentes secciones de la aplicación.
+---
 
-Tareas
-Desarrollar la HomeScreen:
+## Etapa 2: Pantalla de Inicio y Navegación  ✅
+Objetivo: Crear la pantalla principal y gestionar la navegación entre diferentes secciones de la aplicación.
 
 Crear una pantalla principal (HomeScreen) que incluya opciones para acceder a las secciones de Pacientes, Doctores y Citas.
 Implementar un menú o pestañas de navegación para facilitar el acceso a las diferentes secciones de la aplicación.
