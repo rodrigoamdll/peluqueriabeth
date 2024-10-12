@@ -27,7 +27,7 @@ const RootNavigator = () => {
     );
   }
 
-  return user ? <AppNavigator /> : <AuthNavigator />;
+  return user ? <AppNavigator /> : <AuthNavigator/>;
 };
 
 export default RootNavigator;

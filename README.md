@@ -41,3 +41,35 @@ Establecer un Stack.Navigator en el archivo AppNavigator.js para manejar la nave
 Asegurarse de que cada pantalla tenga su propio título y se muestre correctamente en la barra de navegación.
 
 Estado: ¡Etapa finalizada! ✅
+
+
+---
+
+## Etapa Final ✅
+
+Estado: ¡Etapa finalizada! ✅
+
+---
+
+# Login
+<img src="https://github.com/AlexanderSiguenza/AsiloApp/blob/main/img/tarea1.jpg" alt="Descripción de la imagen" width="300" height="600">
+
+
+# Registro
+<img src="https://github.com/AlexanderSiguenza/AsiloApp/blob/main/img/tarea2.jpg" alt="Descripción de la imagen" width="300" height="600">
+
+
+# Menu
+<img src="https://github.com/AlexanderSiguenza/AsiloApp/blob/main/img/tarea6.jpg" alt="Descripción de la imagen" width="300" height="600">
+
+
+# Pacientes
+<img src="https://github.com/AlexanderSiguenza/AsiloApp/blob/main/img/tarea3.jpg" alt="Descripción de la imagen" width="300" height="600">
+
+
+# Doctores
+<img src="https://github.com/AlexanderSiguenza/AsiloApp/blob/main/img/tarea4.jpg" alt="Descripción de la imagen" width="300" height="600">
+
+
+# Citas
+<img src="https://github.com/AlexanderSiguenza/AsiloApp/blob/main/img/tarea5.jpg" alt="Descripción de la imagen" width="300" height="600">
