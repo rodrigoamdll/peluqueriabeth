@@ -109,22 +109,23 @@ const styles = StyleSheet.create({
     elevation: 5,
     alignItems: 'center',
     width: width / 2.2,
+    height: 250, // Limitar la altura del card
   },
   image: {
-    width: 120,
-    height: 120,
-    borderRadius: 60,
+    width: 100, // Reducir un poco el tamaño de la imagen
+    height: 100,
+    borderRadius: 50,
     marginBottom: 15,
   },
   title: {
-    fontSize: 18,
+    fontSize: 16,
     fontWeight: 'bold',
     color: '#444',
     marginBottom: 8,
     textAlign: 'center',
   },
   price: {
-    fontSize: 16,
+    fontSize: 14,
     color: '#e74c3c',
     marginBottom: 10,
   },
@@ -132,17 +133,17 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     backgroundColor: '#8b4513',
-    padding: 10,
-    borderRadius: 15,
-    paddingHorizontal: 20,
+    padding: 8,
+    borderRadius: 10,
+    paddingHorizontal: 15,
   },
   buttonText: {
     color: '#fff',
     fontWeight: 'bold',
-    fontSize: 16,
+    fontSize: 14,
   },
   icon: {
-    marginRight: 8,
+    marginRight: 5,
   },
   modalContainer: {
     flex: 1,
@@ -189,7 +190,6 @@ const styles = StyleSheet.create({
     color: '#e74c3c',
     marginBottom: 20,
   },
-  // Estilo actualizado para el botón de cerrar dentro del modal
   modalCloseButton: {
     flexDirection: 'row',
     alignItems: 'center',
