@@ -25,12 +25,12 @@ const CitasScreen = () => {
 
   useEffect(() => {
     const obtenerNombreUsuario = async () => {
-      const user = auth.currentUser; // Obtener el usuario actual
+      const user = auth.currentUser; 
       if (user) {
         try {
-          const userDoc = await getDoc(doc(db, 'users', user.uid)); // Obtener documento del usuario
+          const userDoc = await getDoc(doc(db, 'users', user.uid)); 
           if (userDoc.exists()) {
-            setNombreUsuario(userDoc.data().name); // Obtener el nombre desde Firestore
+            setNombreUsuario(userDoc.data().name);
           }
         } catch (error) {
           console.error('Error al obtener el nombre del usuario: ', error);

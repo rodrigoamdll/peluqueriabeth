@@ -21,11 +21,11 @@ const LoginScreen = () => {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1, // Ocupa toda la pantalla
-    justifyContent: 'center', // Centra verticalmente el contenido
-    alignItems: 'center', // Centra horizontalmente el contenido
-    padding: 20, // Espacio alrededor
-    backgroundColor: '#f5f5f5', // Fondo claro
+    flex: 1, 
+    justifyContent: 'center', 
+    alignItems: 'center', 
+    padding: 20, 
+    backgroundColor: '#f5f5f5', 
   },
   title: {
     fontSize: 24,
@@ -34,9 +34,9 @@ const styles = StyleSheet.create({
     color: '#333',
   },
   buttonContainer: {
-    marginTop: 20, // Añade espacio entre el formulario y el botón
-    position: 'absolute', // Asegura que esté en una posición fija
-    bottom: 30, // Lo coloca en la parte inferior de la pantalla
+    marginTop: 20, 
+    position: 'absolute', 
+    bottom: 30, 
   },
 });
 

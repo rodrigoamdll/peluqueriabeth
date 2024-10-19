@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { ActivityIndicator, View } from 'react-native';
-import { onAuthStateChanged } from 'firebase/auth'; // Firebase auth function
-import { auth } from '../utils/firebaseConfig'; // Import your Firebase configuration
+import { onAuthStateChanged } from 'firebase/auth'; 
+import { auth } from '../utils/firebaseConfig'; 
 import AuthNavigator from './AuthNavigator';
 import AppNavigator from './AppNavigator';
 
@@ -15,7 +15,7 @@ const RootNavigator = () => {
       setLoading(false);
     });
 
-    // Cleanup subscription on unmount
+
     return () => unsubscribe();
   }, []);
 

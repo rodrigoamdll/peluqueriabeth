@@ -293,9 +293,9 @@ const styles = StyleSheet.create({
     paddingVertical: 10,
     borderRadius: 5,
     marginBottom: 10,
-    alignItems: 'center', // Centra el icono y el texto verticalmente
-    justifyContent: 'center', // Centra el contenido horizontalmente
-    width: '100%', // Asegura que ocupe el ancho completo
+    alignItems: 'center', 
+    justifyContent: 'center', 
+    width: '100%', 
   },
   changePhotoText: {
     color: '#FFF',
@@ -313,9 +313,9 @@ const styles = StyleSheet.create({
     paddingVertical: 10,
     borderRadius: 5,
     marginBottom: 10,
-    alignItems: 'center', // Centra el icono y el texto verticalmente
-    justifyContent: 'center', // Centra el contenido horizontalmente
-    width: '100%', // Asegura que ocupe el ancho completo
+    alignItems: 'center', 
+    justifyContent: 'center', 
+    width: '100%', 
   },
   saveButtonText: {
     color: '#FFF',
@@ -326,9 +326,9 @@ const styles = StyleSheet.create({
     backgroundColor: '#F44336',
     paddingVertical: 10,
     borderRadius: 5,
-    alignItems: 'center', // Centra el icono y el texto verticalmente
-    justifyContent: 'center', // Centra el contenido horizontalmente
-    width: '100%', // Asegura que ocupe el ancho completo
+    alignItems: 'center', 
+    justifyContent: 'center', 
+    width: '100%', 
   },
   cancelButtonText: {
     color: '#FFF',

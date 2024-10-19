@@ -3,8 +3,8 @@ import { View, Text, StyleSheet, Image } from 'react-native';
 import { createDrawerNavigator, DrawerContentScrollView, DrawerItemList, DrawerItem } from '@react-navigation/drawer';
 import { useNavigation } from '@react-navigation/native';
 import Icon from 'react-native-vector-icons/FontAwesome';
-import { auth, db } from '../utils/firebaseConfig'; // Asegúrate de importar Firestore
-import { doc, onSnapshot } from 'firebase/firestore'; // Cambiar a onSnapshot
+import { auth, db } from '../utils/firebaseConfig'; 
+import { doc, onSnapshot } from 'firebase/firestore'; 
 
 import HomeScreen from '../components/HomeScreen';
 import CuentaScreen from '../components/CuentaScreen';
@@ -17,20 +17,20 @@ const Drawer = createDrawerNavigator();
 
 function CustomDrawerContent(props) {
   const navigation = useNavigation();
-  const user = auth.currentUser; // Obtener el usuario actual
-  const [userName, setUserName] = useState('Usuario'); // Estado para almacenar el nombre del usuario
-  const [profilePicture, setProfilePicture] = useState(''); // Estado para almacenar la imagen del perfil
+  const user = auth.currentUser; 
+  const [userName, setUserName] = useState('Usuario'); 
+  const [profilePicture, setProfilePicture] = useState(''); 
 
   useEffect(() => {
     const unsubscribe = onSnapshot(doc(db, 'users', user.uid), (doc) => {
       if (doc.exists()) {
         const userData = doc.data();
-        setUserName(userData.name || 'Usuario'); // Si no hay nombre, usar "Usuario"
-        setProfilePicture(userData.profilePicture); // Obtener la imagen del perfil
+        setUserName(userData.name || 'Usuario'); 
+        setProfilePicture(userData.profilePicture); 
       }
     });
 
-    return () => unsubscribe(); // Limpiar el suscriptor al desmontar el componente
+    return () => unsubscribe(); 
   }, [user]);
 
   const handleLogout = () => {
@@ -45,7 +45,7 @@ function CustomDrawerContent(props) {
     <DrawerContentScrollView {...props} style={styles.drawerContent}>
       <View style={{ padding: 20, alignItems: 'center' }}>
         <Image
-          source={profilePicture ? { uri: profilePicture } : require('../img/user.png')} // Usar la imagen del perfil o la por defecto
+          source={profilePicture ? { uri: profilePicture } : require('../img/user.png')} 
           style={styles.profileImage}
         />
         <Text style={styles.userName}>

@@ -12,7 +12,7 @@ const RegisterScreen = () => {
       <Button 
         title="¿Ya tienes una cuenta?"
         onPress={() => navigation.navigate('Login')} 
-        color="#841584" // Puedes cambiar el color aquí si lo deseas
+        color="#841584" 
       />
     </View>
   );
@@ -20,18 +20,18 @@ const RegisterScreen = () => {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1, // Ocupa toda la pantalla
-    justifyContent: 'center', // Centra verticalmente
-    alignItems: 'center', // Centra horizontalmente
-    padding: 20, // Añade espacio alrededor
-    backgroundColor: '#f5f5f5', // Fondo claro
+    flex: 1, 
+    justifyContent: 'center', 
+    alignItems: 'center', 
+    padding: 20, 
+    backgroundColor: '#f5f5f5', 
   },
   title: {
     fontSize: 24,
     marginBottom: 20,
     fontWeight: 'bold',
     color: '#333',
-    textAlign: 'center', // Asegura que el título esté centrado
+    textAlign: 'center', 
   },
 });
 

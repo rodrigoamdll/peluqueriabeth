@@ -60,8 +60,8 @@ const CuentaScreen = () => {
       const credential = EmailAuthProvider.credential(user.email, password);
       try {
         await reauthenticateWithCredential(user, credential);
-        await deleteDoc(doc(db, 'users', user.uid)); // Eliminar los datos de Firestore
-        await deleteUser(user); // Eliminar el usuario de Firebase Authentication
+        await deleteDoc(doc(db, 'users', user.uid)); 
+        await deleteUser(user); 
         Alert.alert('Cuenta Eliminada', 'Tu cuenta ha sido eliminada correctamente.');
         setDeleteAccountModalVisible(false);
       } catch (error) {

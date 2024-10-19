@@ -2,14 +2,14 @@ import React, { useState } from 'react';
 import { View, TextInput, Button, Alert, StyleSheet, Text } from 'react-native';
 import { auth } from '../utils/firebaseConfig';
 import { signInWithEmailAndPassword, createUserWithEmailAndPassword } from 'firebase/auth';
-import { db } from '../utils/firebaseConfig'; // Asegúrate de importar Firestore
-import { setDoc, doc } from 'firebase/firestore'; // Importa las funciones necesarias
+import { db } from '../utils/firebaseConfig'; 
+import { setDoc, doc } from 'firebase/firestore'; 
 import { ImagenTop } from "../components/ImageTop";
 
 const AuthForm = ({ isLogin }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [name, setName] = useState(''); // Estado para almacenar el nombre
+  const [name, setName] = useState(''); 
 
   const handleSubmit = async () => {
     if (isLogin) {
@@ -23,12 +23,10 @@ const AuthForm = ({ isLogin }) => {
       try {
         const userCredential = await createUserWithEmailAndPassword(auth, email, password);
         const user = userCredential.user;
-
-        // Guarda la información del usuario en Firestore
         await setDoc(doc(db, 'users', user.uid), {
           email: user.email,
-          name: name, // Guardar el nombre ingresado
-          profilePicture: '', // Puedes establecer una imagen predeterminada o dejarlo vacío
+          name: name, 
+          profilePicture: '', 
         });
 
         Alert.alert('Registro exitoso');
@@ -43,7 +41,7 @@ const AuthForm = ({ isLogin }) => {
       <ImagenTop />
       <View style={styles.formContainer}>
         <Text style={styles.title}>{isLogin ? "Iniciar Sesión" : "Registro"}</Text>
-        {!isLogin && ( // Mostrar el campo de nombre solo si no es inicio de sesión
+        {!isLogin && ( 
           <TextInput
             style={styles.input}
             placeholder="Nombre"

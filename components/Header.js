@@ -10,7 +10,7 @@ const Header = ({ onMenuPress }) => {
         <Icon name="bars" size={24} color="#fff" />
       </TouchableOpacity>
       <Image
-        source={require('../img/logo 8.png')} // Cambia la ruta a la ubicación de tu logo
+        source={require('../img/logo 8.png')} 
         style={styles.logo}
       />
       <TouchableOpacity style={styles.cartButton}>
@@ -26,14 +26,14 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'space-between',
     padding: 10,
-    backgroundColor: '#8c4030', // Cambia el color según lo que desees
+    backgroundColor: '#8c4030', 
   },
   menuButton: {
     padding: 10,
   },
   logo: {
     width: 100,
-    height: 40, // Ajusta el tamaño del logo
+    height: 40, 
     resizeMode: 'contain',
   },
   cartButton: {

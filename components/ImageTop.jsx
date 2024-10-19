@@ -16,15 +16,15 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   imageTop: {
-    width: Dimensions.get("window").width, // Ancho completo de la pantalla
-    height: Dimensions.get("window").height * 0.4, // 40% de la altura de la pantalla
+    width: Dimensions.get("window").width, 
+    height: Dimensions.get("window").height * 0.4, 
     position: "relative"
   },
   logo: {
     width: 200,
     height: 200,
     position: "absolute",
-    top: 50, // Ajusta la posición del logo para que esté dentro de la imagen de fondo
+    top: 50, 
     zIndex: 1,
   },
 });

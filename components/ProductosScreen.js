@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { View, Text, Image, Modal, TouchableOpacity, ScrollView, StyleSheet } from 'react-native';
 import { collection, getDocs } from 'firebase/firestore';
-import { db } from '../utils/firebaseConfig'; // Asegúrate de que esta importación sea correcta
+import { db } from '../utils/firebaseConfig'; 
 
 const ProductScreen = () => {
   const [products, setProducts] = useState([]);
@@ -9,7 +9,7 @@ const ProductScreen = () => {
   const [selectedProduct, setSelectedProduct] = useState(null);
 
   const fetchProducts = async () => {
-    const productsCollection = collection(db, 'productos'); // Asegúrate de que el nombre de la colección sea correcto
+    const productsCollection = collection(db, 'productos'); 
     const productSnapshot = await getDocs(productsCollection);
     const productList = productSnapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
     setProducts(productList);
@@ -96,18 +96,18 @@ const styles = StyleSheet.create({
     fontSize: 24,
     fontWeight: 'bold',
     marginBottom: 20,
-    textAlign: 'center', // Centrar el texto
+    textAlign: 'center', 
   },
   row: {
     flexDirection: 'row',
-    flexWrap: 'wrap', // Permitir que las tarjetas se envuelvan en múltiples filas
+    flexWrap: 'wrap', 
     justifyContent: 'space-between',
   },
   productCard: {
     backgroundColor: '#FFF',
     borderRadius: 10,
     padding: 10,
-    width: '48%', // Ajusta el ancho para mostrar dos productos
+    width: '48%', 
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.3,
@@ -116,7 +116,7 @@ const styles = StyleSheet.create({
     marginBottom: 15,
   },
   marginLeft: {
-    marginLeft: '4%', // Añade margen izquierdo al segundo producto en la fila
+    marginLeft: '4%', 
   },
   imageContainer: {
     alignItems: 'center',
@@ -125,7 +125,7 @@ const styles = StyleSheet.create({
   productImage: {
     width: 80,
     height: 80,
-    borderRadius: 40, // Círculo
+    borderRadius: 40, 
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.3,
@@ -150,7 +150,7 @@ const styles = StyleSheet.create({
     paddingVertical: 8,
     borderRadius: 5,
     alignItems: 'center',
-    width: '100%', // Asegúrate de que el botón ocupe todo el ancho
+    width: '100%', 
   },
   detailsButtonText: {
     color: '#FFF',

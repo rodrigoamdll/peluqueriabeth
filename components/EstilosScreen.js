@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { View, Text, Image, StyleSheet, FlatList, TouchableOpacity, Modal, Dimensions } from 'react-native';
 import { collection, getDocs } from 'firebase/firestore'; 
-import { db } from '../utils/firebaseConfig'; // Asegúrate de importar tu configuración de Firebase
-import { FontAwesome } from '@expo/vector-icons'; // Importar FontAwesome
+import { db } from '../utils/firebaseConfig'; 
+import { FontAwesome } from '@expo/vector-icons'; 
 
-const { width } = Dimensions.get('window'); // Obtener el ancho de la pantalla
+const { width } = Dimensions.get('window'); 
 
 const EstilosScreen = () => {
   const [estilos, setEstilos] = useState([]);
@@ -13,7 +13,7 @@ const EstilosScreen = () => {
 
   useEffect(() => {
     const fetchEstilos = async () => {
-      const querySnapshot = await getDocs(collection(db, 'estilos')); // Cambia 'estilos' por el nombre de tu colección
+      const querySnapshot = await getDocs(collection(db, 'estilos')); 
       const estilosData = querySnapshot.docs.map(doc => ({
         id: doc.id,
         ...doc.data(),

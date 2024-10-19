@@ -1,10 +1,9 @@
 import React from 'react';
 import { View, Text, Image, ScrollView, StyleSheet, TouchableOpacity, Linking } from 'react-native';
-import Icon from 'react-native-vector-icons/FontAwesome'; // Asegúrate de que este sea el ícono correcto
-
+import Icon from 'react-native-vector-icons/FontAwesome'; 
 const Home = () => {
-  const phoneNumber = '50374115615'; // Cambia esto al número de WhatsApp deseado
-  const whatsappUrl = `https://wa.me/${phoneNumber}`; // URL de WhatsApp
+  const phoneNumber = '50374115615'; 
+  const whatsappUrl = `https://wa.me/${phoneNumber}`;
 
   const handleContactPress = () => {
     Linking.openURL(whatsappUrl)
@@ -16,7 +15,7 @@ const Home = () => {
       {/* Logo de la Peluquería */}
       <View style={styles.logoContainer}>
         <Image
-          source={require('../img/logo 8.png')} // Cambia la ruta a la ubicación de tu logo
+          source={require('../img/logo 8.png')} 
           style={styles.logo}
         />
               <View style={styles.header}>
@@ -34,7 +33,7 @@ const Home = () => {
       {/* Imagen del Local */}
       <Text style={styles.sectionTitle}>📍 Nuestro Local</Text>
       <Image
-        source={require('../img/local1.png')} // Cambia la ruta a la ubicación de tu imagen del local
+        source={require('../img/local1.png')} 
         style={styles.localImage}
       />
 
@@ -63,7 +62,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 20,
-    backgroundColor: '#f8f8f8', // Color de fondo del contenedor
+    backgroundColor: '#f8f8f8', 
   },
   logoContainer: {
     alignItems: 'center',
@@ -72,7 +71,7 @@ const styles = StyleSheet.create({
   logo: {
     width: 350,
     height: 150,
-    borderRadius: 20, // Redondear el logo si es cuadrado
+    borderRadius: 20, 
   },
   header: {
     alignItems: 'center',
@@ -81,7 +80,7 @@ const styles = StyleSheet.create({
   titleheader: {
     fontSize: 32,
     fontWeight: 'bold',
-    color: '#FFC107', // Color amarillo
+    color: '#FFC107', 
   },
   subtitle: {
     fontSize: 16,
@@ -107,7 +106,7 @@ const styles = StyleSheet.create({
   },
   localImage: {
     width: '100%',
-    height: 200, // Ajusta la altura según lo que necesites
+    height: 200, 
     borderRadius: 10,
     marginBottom: 20,
   },
@@ -117,28 +116,28 @@ const styles = StyleSheet.create({
     marginBottom: 20,
   },
   button: {
-    backgroundColor: '#25D366', // Color de WhatsApp
+    backgroundColor: '#25D366',
     padding: 15,
     borderRadius: 5,
     alignItems: 'center',
     marginTop: 20,
-    marginBottom: 40, // Aumentado para no estar tan pegado al fondo
-    flexDirection: 'row', // Para alinear el icono y el texto
+    marginBottom: 40, 
+    flexDirection: 'row', 
     justifyContent: 'center',
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.2,
     shadowRadius: 4,
-    elevation: 3, // Sombra para el botón en Android
+    elevation: 3, 
   },
   buttonText: {
     color: '#fff',
     fontSize: 16,
     fontWeight: 'bold',
-    marginLeft: 10, // Espacio entre el ícono y el texto
+    marginLeft: 10, 
   },
   icon: {
-    // Puedes añadir estilos al icono aquí si es necesario
+
   },
 });
 
